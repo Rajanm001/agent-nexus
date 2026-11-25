@@ -1,0 +1,27 @@
+orchestrator:
+  max_revisions: 3
+  quality_threshold: 7.5
+
+research_agent:
+  model: claude-sonnet-4-20250514
+  max_search_queries: 4
+  max_results_per_query: 5
+
+document_agent:
+  model: claude-sonnet-4-20250514
+  vector_store: faiss
+  top_k: 10
+  rerank: true
+
+factcheck_agent:
+  model: claude-sonnet-4-20250514
+  temperature: 0.1
+  min_sources: 3
+
+writer_agent:
+  model: claude-sonnet-4-20250514
+  max_tokens: 4000
+
+review_agent:
+  model: claude-sonnet-4-20250514
+  temperature: 0.2
